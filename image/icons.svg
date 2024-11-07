@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+
+        <symbol id="icon-subtract" viewBox="0 0 125 32">
+            <path
+                d="M48.8 0h-32.8c-8.837 0-16 7.163-16 16s7.163 16 16 16h32.8v-0.8h-32.8c-8.395 0-15.2-6.805-15.2-15.2s6.805-15.2 15.2-15.2h32.8v-0.8zM76 31.2h32.8c8.394 0 15.2-6.805 15.2-15.2s-6.806-15.2-15.2-15.2h-32.8v-0.8h32.8c8.837 0 16 7.163 16 16s-7.163 16-16 16h-32.8v-0.8z">
+            </path>
+        </symbol>
+
+    </defs>
+</svg>
