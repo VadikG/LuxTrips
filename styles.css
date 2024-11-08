@@ -86,12 +86,13 @@ button {
 
 /*Header*/
 .header {
-  background-color: burlywood;
+  position: relative;
+  z-index: 10;
 }
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 20px;
 }
 .header-mobile_btn {
@@ -104,8 +105,9 @@ button {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-right: auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .header-mobile_btn {
     display: none;
   }
@@ -121,8 +123,9 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin-left: auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .burger-btn {
     display: none;
   }
@@ -153,23 +156,29 @@ button {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .header-logo {
 }
+@media only screen and (min-width: 1200px) {
+  .header-logo {
+    display: block;
+    margin-right: auto;
+  }
+}
 .logo-img {
 }
+
 .header-nav_list {
   display: none;
 }
-@media only screen and (min-width: 768px) {
-  .header-nav_list {
-    display: flex;
-    gap: 20px;
+@media only screen and (min-width: 1200px) {
+  .nav {
+    margin: 0 auto;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .header-nav_list {
+    display: flex;
     gap: 40px;
   }
 }
@@ -182,7 +191,7 @@ button {
 .header-btn {
   display: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .header-btn {
     display: flex;
     justify-content: center;
@@ -203,6 +212,56 @@ button {
 .header-svg_subtract {
   display: block;
   position: absolute;
+  fill: #ffffff;
 }
+.header-btn_top {
+  display: block;
+  position: absolute;
+  top: -10px;
+  fill: #ffffff;
+}
+.header-btn_bottom {
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  fill: #ffffff;
+}
+
 .header-btn_span {
+}
+
+/**Hero**/
+.hero {
+  padding: 170px 252px 0 252px;
+  position: absolute;
+  top: 0;
+}
+.bg_hero {
+  background-image: url(./image/hero/sky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: absolute;
+}
+.container {
+}
+.hero-subtitle {
+  color: #0c0b10;
+  text-align: center;
+  font-size: 25px;
+  line-height: 24.6; /* 24.625px */
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-family: Forum;
+  font-size: 197.951px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64.94%; /* 128.549px */
+  letter-spacing: 7.918px;
+  text-transform: uppercase;
 }

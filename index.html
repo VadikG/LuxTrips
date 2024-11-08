@@ -25,10 +25,13 @@
             <button class="header-mobile_btn">
                 Call Me
             </button>
+
+            <a class="header-logo">
+                <img class="logo-img"
+                    srcset="./image/header/logo.png 1x, ./image/header/logo@x2.png 2x, ./image/header/logo@x3.png 3x"
+                    src="./image/header/logo-img.png" width="121" height="63" alt="logo" />
+            </a>
             <nav class="nav">
-                <a class="header-logo">
-                    <img class="logo-img" src="./image/header/logo-mobile.png" alt="logo-img">
-                </a>
                 <ul class="header-nav_list">
                     <li class="header-nav_item">
                         <a class="header-nav_link" href="">Home</a>
@@ -49,20 +52,31 @@
                         <a class="header-nav_link" href="">Client Area</a>
                     </li>
                 </ul>
-
-                <button class="header-btn" type="button">
-                    <svg class="header-svg_subtract" width="156" height="40">
-                        <use href="./image/icons.svg#icon-subtract"></use>
-                    </svg>
-                    <span class="header-btn_span">Call Me Back</span>
-                </button>
-
             </nav>
+            <button class="header-btn" type="button">
+                <svg class="header-svg_subtract" width="156" height="40">
+                    <use href="./image/icons.svg#icon-subtract"></use>
+                </svg>
+                <svg class="header-btn_top" width="22" height="9">
+                    <use href="./image/icons.svg#icon-btn-top"></use>
+                </svg>
+                <svg class="header-btn_bottom" width="22" height="9">
+                    <use href="./image/icons.svg#icon-btn-bottom"></use>
+                </svg>
+                <span class="header-btn_span">Call Me Back</span>
+            </button>
             <button class="burger-btn" type="button">
                 <span></span>
             </button>
         </div>
     </header>
+    <!--Hero-->
+    <section class="hero bg_hero">
+        <div class="container">
+            <p class="hero-subtitle">the world’s most</p>
+            <h1 class="hero-title">extra ordinary Places</h1>
+        </div>
+    </section>
 </body>
 
 </html>
