@@ -173,7 +173,8 @@ button {
 }
 @media only screen and (min-width: 1200px) {
   .nav {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -232,36 +233,53 @@ button {
 
 /**Hero**/
 .hero {
-  padding: 170px 252px 0 252px;
   position: absolute;
   top: 0;
+  padding-top: 108px;
+  padding-bottom: 378px;
 }
 .bg_hero {
-  background-image: url(./image/hero/sky.png);
+  background-image: url(./image/hero/lakes.png), url("./image/hero/sky.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1200px, cover;
   background-position: center;
+
   width: 100%;
-  position: absolute;
 }
 .container {
+}
+.hero-subtitle_box {
+  width: 138px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
 }
 .hero-subtitle {
   color: #0c0b10;
   text-align: center;
   font-size: 25px;
-  line-height: 24.6; /* 24.625px */
+  line-height: 1.5;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
+.hero-title_box {
+  width: 936px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
 .hero-title {
+  display: block;
   color: #fff;
   text-align: center;
-  font-family: Forum;
-  font-size: 197.951px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 64.94%; /* 128.549px */
+  font-size: 197px;
+  line-height: 0.65;
   letter-spacing: 7.918px;
   text-transform: uppercase;
+}
+.hero-title_span {
+  font-size: 141px;
+  line-height: 1;
+  letter-spacing: 0, 03em;
+  display: block;
 }
